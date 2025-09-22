@@ -51,7 +51,7 @@ namespace TraficLight.ModelsLogic
                        LightChanged?.Invoke(this, new LightChengedEventArgs(tl));
             }
         }
-        public void ChangeSeconds()
+        public override void ChangeSeconds()
         {
             if(NumOfSeconds > 0)
                timer.Interval = NumOfSeconds * 1000;

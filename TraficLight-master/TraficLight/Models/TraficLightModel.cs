@@ -27,6 +27,7 @@ namespace TraficLight.Models
         public double NumOfSeconds {  get; set; }
         public abstract string SwitchChangeLightText { get; }
         public abstract string LightImage { get; }
+        public abstract void ChangeSeconds();
         public abstract void ChangeLight();
         public abstract void SwitchAutoChange();
         protected LightImage lightImage = new();
